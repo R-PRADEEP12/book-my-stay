@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-div {
+  height: 650px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  position: relative;
+}
+
+.home-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://resortbeds.com/imgfly/images/ZWZW3TmpH4hxTGUlfKQG6lXzuYPgA0rLgB2F8l7w.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1.5px);
+}
+
+.home-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  font-size: 13px;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.home-nav.scrolled {
+  background-color: rgb(219, 166, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.home-h1 {
+  color: #f85e17;
+  margin-left: 10px;
+}
+
+.home-button,
+.home-button2,
+.home-button3,
+.home-button4 {
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button1 {
+  background: transparent;
+  color: #fff;
+  height: 70px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 600px;
+  border: none;
+  cursor: pointer;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content-overlay h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.home-button:hover,
+.home-button1:hover,
+.home-button2:hover,
+.home-button3:hover,
+.home-button4:hover {
+  border-bottom: 2px solid #fff;
+  color: #f85e17c5;
+}
+
+.home-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.home-button5 {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 60px;
+  width: 200px;
+  background-color: rgb(230, 136, 28);
+  color: #fff;
+}
+
+.home-para {
+  font-size: 20px;
+  font-weight: 30px;
+}
+
+.home-div1 {
+  width: 900px;
+  height: 150px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgb(39, 35, 35);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: 170px;
+  border-radius: 10px;
+}
+
+.home-head1 {
+  margin-right: 600px;
+  margin-top: 15px;
+}
+
+.home-form {
+  display: flex;
+}
+.home-div2{
+  margin-left: 20px;
+}
+.home-button6 {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 53px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+  font-size: 15px;
+}
+
+.home-date {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+.home-dec1{
+    text-decoration: none;
+    color: #fff;
+}
+.home-dec1:hover{
+  color:#f85e17c5;
+}
+.home-deco{
+  color: #fff;
+  text-decoration: none;
+}
+.home-deco:hover{
+  color:#f85e17c5;
+}
+.home-count {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.home-submit {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 53px;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: rgb(230, 136, 28);
+  color: #fff;
+}
+
+.home-box {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.home-check {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.home-head3 {
+  margin-right: 650px;
+}
+.home-div2 {
+  display: flex;
+  overflow: hidden;
+}
+.slick-prev,
+.slick-next {
+  z-index: 2;
+}
+
+.slick-prev {
+  left: 40px;
+  font-size: 30px;
+  background-color: rgb(230, 136, 28);
+  border-radius: 10px;
+  height: 20px;
+  width: auto;
+  text-align: center;
+}
+
+.slick-next {
+  right: 20px;
+  font-size: 30px;
+  background-color: rgb(230, 136, 28);
+  border-radius: 10px;
+  height: 20px;
+  text-align: center;
+  padding-left: 20px;
+}
+.slick-next:hover{
+  background-color: #3b3737;
+}
+.slick-prev:hover{
+  background-color: #3b3737;
+}
+.slick-slider {
+  width: 90%; 
+  margin: 0 auto;
+}
+.home-form2 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #333;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.home-form3 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #333;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.home-form1 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-left: 70px;
+  border-color: #333;
+  text-align: center;
+}
+
+.home-form4 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #333;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.home-form5 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-left: 130px;
+  border-color: #333;
+  text-align: center;
+}
+
+.home-form6 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-left: 160px;
+  border-color: #333;
+  text-align: center;
+}
+.home-form7 {
+  width: 200px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-left: 190px;
+  border-color: #333;
+  text-align: center;
+}
+
+
+.home-im {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.home-caption {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.home-hor {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.home-im1 {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.home-caption1 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.home-hor1 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.home-im2 {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.home-caption2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.home-hor2 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.home-im3 {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.home-caption3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.home-hor3 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.home-im4 {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.home-caption4 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.home-hor4 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.home-im5 {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.home-caption5 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.home-hor5 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.home-member{
+  margin-right: 970px;
+}
+.home-fun {
+  position: relative;
+  border-radius: 10px;
+  width: 1240px;
+  height: 500px; 
+  overflow: hidden;
+}
+.home-confu{
+  width: 1150px;
+  height: 460px;
+}
+.home-image {
+  width: 100%;
+  height: 100%;
+  margin-left: 85px;
+  margin-top: 20px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 30%; 
+  transform: translate(-50%, -50%);
+  color: rgb(241, 120, 7);
+  text-align: center;
+  z-index: 1;
+}
+
+.home-head7{
+  font-size: 50px;
+  text-align: left;
+  margin-top: 55px;
+}
+
+.home-head6{
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 50px !important;
+  color: #fff;
+}
+.home-textbut{
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 190px;
+  background-color: rgb(238, 119, 7);
+  color: #fff;
+  margin-right: 30px;
+  font-weight: bold;
+}
+.home-dec{
+  text-decoration: none;
+  color: #fff;
+}
+.home-header{
+  margin-right: 930px;
+}
+/* Assuming the same styles for .home-image-container and .home-image-container1 */
+
+.home-image-container,
+.home-image-container1 {
+  position: relative;
+  flex: 1;
+  overflow: hidden; /* Optional: Hide overflow to ensure the overlay fits */
+}
+
+.home-image3,
+.home-image4,
+.home-image5 {
+  width: calc(100% - 60px); /* Adjusted width to accommodate the margin */
+  height: 200px;
+  display: block;
+  border-radius: 10px;
+  margin-left: 40px; /* Adjusted margin-left for consistent spacing */
+}
+
+.home-image-overlay,
+.home-image-overlay1,
+.home-image-overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 310px; /* Set width to 100% to match the image width */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom-left-radius: 5px; /* Optional: Match border-radius of image */
+  border-bottom-right-radius: 5px; /* Optional: Match border-radius of image */
+  margin-left: 40px; /* Adjusted margin-left for overlay */
+}
+.slick-prev1{
+  margin-right: 30px;
+}
+.home-deals{
+  margin-right: 800px;
+}
+.home-divis{
+  display: flex;
+}
+.home-r{
+  height: 500px;
+  width: 370px;
+  border: 1px solid black;
+  margin-left: 90px;
+  border-radius: 10px;
+}
+.home-r1{
+  height: 500px;
+  width: 370px;
+  border: 1px solid black;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.home-rimg{
+  height: 240px;
+  width:370px ;
+  border-radius: 10px;
+}
+.home-dealh{
+  margin-right: 930px;
+  margin-top: 10px;
+  font-weight: 10px;
+  font-size: 18px;
+}
